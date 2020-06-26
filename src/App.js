@@ -88,6 +88,7 @@ const App = () => {
 							<div className="present">
 								<p>Congratulations you have finished the Quiz!</p>
 								<p>Your score is {count} out of 5</p>
+								<button onClick={() => setAtual(0)}>Restart</button>
 							</div>
 						) : (
 							<div className="present">
