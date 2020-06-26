@@ -58,6 +58,10 @@ const App = () => {
 	const handleStart = () => {
 		setStarted(true);
 	}
+	const handleRestart= () => {
+		setAtual(0);
+		setCount(0);
+	}
 
 	const handleOption = ev => {
 		setOption(ev.target.value);
@@ -88,7 +92,7 @@ const App = () => {
 							<div className="present">
 								<p>Congratulations you have finished the Quiz!</p>
 								<p>Your score is {count} out of 5</p>
-								<button onClick={() => setAtual(0)}>Restart</button>
+								<button onClick={() => handleRestart()}>Restart</button>
 							</div>
 						) : (
 							<div className="present">
